@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<script>
+// 将以下代码添加到js入口函数内即可
+document.addEventListener('click', function() {
+    document.getElementById('audios').play()
+})
+</script>
+	<style>
+	h1{
+    color:white;
+    position:absolute;
+    top:80%;
+    left:60%;
+    text-align:center;
+    font-weight:400;
+    text-shadow:1px 1px 8px rgba(255,0,0,.7)
+   }
+	
+		html, body {
+		  height: 100%;
+		  padding: 0;
+		  margin: 0;
+		  background: #000;
+		}
+		img{
+			display: block;
+			margin: 0 auto;
+		}
+		label{
+			
+			display: block;
+			margin: 0 auto;
+			color: pink;
+			font-size: 20px;
+			padding-right: 5px;/*往左偏移10px*/
+			animation:mymove 2.5s infinite;/* //关联动画名称、动画时长、循环 */
+				/*Safari 和 Chrome:*/
+				-webkit-animation:mymove 2.5s infinite;/* //同上（兼容） */
+		}
+		@keyframes mymove
+			{
+			50% {font-size: 40px;}/* //名字放大大小 */
+		}
+		
+		/*Safari 和 Chrome:*/
+		@-webkit-keyframes mymove
+		{
+			50% {font-size: 40px;}/* //名字放大大小 */
+		}
+		.middle{
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			align-items: center;
+		}
+		.middle2{
+			position: absolute;
+			z-index: 2;
+			width: 100%;
+			height: 100%;
+            margin: auto;
+			
+			display: flex;align-items: center;
+		}
+	</style>
+<link rel="stylesheet" href="./style.css">
+<body>
+    <div class="container">
+        <span>浪</span>
+        <span>漫</span>
+        <span>的</span>
+        <span>爱</span>
+        <span>心</span>
+ 
+    </div>
+		<div class="middle">
+			<div class="middle2">	
+			</div>
+			
+			<img src="https://pic.imgdb.cn/item/642547f5a682492fcc15cd5d.gif"width="1000" height="650"/>
+		</div>
+		
+  </body>
+  <h1><i>Akimo Zhao，meeting you is  the most  beautiful accident in my life. </i></h1>
+<audio autoplay="autopaly" loop="loop" id="audios">
+    <source src="https://link.hhtjim.com/163/1860578400.mp3" type="audio/mp3" />
+</audio>
+    
+<script type="text/javascript" src="//js.users.51.la/21504121.js"></script>		
+	</body>
+</html>
